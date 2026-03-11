@@ -1,0 +1,23 @@
+{
+  "item.nemos_upgrade_templates.copper_upgrade_smithing_template": "Copper Upgrade",
+  "item.nemos_upgrade_templates.diamond_upgrade_smithing_template": "Diamond Upgrade",
+  "item.nemos_upgrade_templates.gold_upgrade_smithing_template": "Gold Upgrade",
+  "item.nemos_upgrade_templates.iron_upgrade_smithing_template": "Iron Upgrade",
+  "item.nemos_upgrade_templates.smithing_template.copper_upgrade.additions_slot_description": "Add Copper Ingot",
+  "item.nemos_upgrade_templates.smithing_template.copper_upgrade.applies_to": "Stone Equipment",
+  "item.nemos_upgrade_templates.smithing_template.copper_upgrade.base_slot_description": "Add leather armor, stone weapon, or tool",
+  "item.nemos_upgrade_templates.smithing_template.copper_upgrade.ingredients": "Copper Ingot",
+  "item.nemos_upgrade_templates.smithing_template.diamond_upgrade.additions_slot_description": "Add Diamond Ingot",
+  "item.nemos_upgrade_templates.smithing_template.diamond_upgrade.applies_to": "Gold Equipment",
+  "item.nemos_upgrade_templates.smithing_template.diamond_upgrade.base_slot_description": "Add gold armor, weapon, or tool",
+  "item.nemos_upgrade_templates.smithing_template.diamond_upgrade.ingredients": "Diamond Ingot",
+  "item.nemos_upgrade_templates.smithing_template.gold_upgrade.additions_slot_description": "Add Gold Ingot",
+  "item.nemos_upgrade_templates.smithing_template.gold_upgrade.applies_to": "Iron Equipment",
+  "item.nemos_upgrade_templates.smithing_template.gold_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
+  "item.nemos_upgrade_templates.smithing_template.gold_upgrade.ingredients": "Gold Ingot",
+  "item.nemos_upgrade_templates.smithing_template.iron_upgrade.additions_slot_description": "Add Iron Ingot",
+  "item.nemos_upgrade_templates.smithing_template.iron_upgrade.applies_to": "Copper Equipment",
+  "item.nemos_upgrade_templates.smithing_template.iron_upgrade.base_slot_description": "Add copper armor, weapon, or tool",
+  "item.nemos_upgrade_templates.smithing_template.iron_upgrade.ingredients": "Iron Ingot",
+  "itemGroup.nemos_upgrade_templates": "Nemo's Upgrade Templates"
+}

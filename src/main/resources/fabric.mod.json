@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "nemos_upgrade_templates",
+	"version": "${version}",
+	"name": "Nemo's Upgrade Templates",
+	"description": "Upgrade almost all of your tools, weapons, and armor with templates!",
+	"authors": [
+		"Nemo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nemos_upgrade_templates/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nemonotfound.nemos.upgrade.templates.NemosUpgradeTemplates"
+		],
+		"client": [
+			"com.nemonotfound.nemos.upgrade.templates.NemosUpgradeTemplatesClient"
+		],
+		"fabric-datagen": [
+			"com.nemonotfound.nemos.upgrade.templates.DataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "nemos_upgrade_templates:item/diamond_upgrade_smithing_template"
+  }
+}

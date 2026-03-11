@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nemos_upgrade_templates:item/diamond_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:copper_ingot",
+    "C": "nemos_upgrade_templates:iron_upgrade_smithing_template"
+  },
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "nemos_upgrade_templates:iron_upgrade_smithing_template"
+  }
+}
