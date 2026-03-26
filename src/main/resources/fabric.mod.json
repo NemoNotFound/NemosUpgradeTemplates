@@ -8,8 +8,8 @@
 		"Nemo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nemonotfound.com/",
+		"sources": "https://github.com/NemoNotFound/NemosUpgradeTemplates"
 	},
 	"license": "ARR",
 	"icon": "assets/nemos_upgrade_templates/icon.png",
