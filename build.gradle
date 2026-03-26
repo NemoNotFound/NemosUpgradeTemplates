@@ -118,6 +118,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
 	mainFile.releaseType = 'release'
 	mainFile.addEnvironment("Client", "Server")
 	mainFile.addRequirement("fabric-api")
+	mainFile.addJavaVersion(25)
 }
 
 modrinth {
