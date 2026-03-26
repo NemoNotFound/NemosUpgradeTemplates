@@ -2,7 +2,7 @@ package com.nemonotfound.nemos.upgrade.templates.datagen;
 
 import com.nemonotfound.nemos.upgrade.templates.world.item.UpgradeTemplateItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
@@ -10,7 +10,7 @@ import org.jspecify.annotations.NonNull;
 
 public class UpgradeTemplateModelProvider extends FabricModelProvider {
 
-    public UpgradeTemplateModelProvider(FabricDataOutput output) {
+    public UpgradeTemplateModelProvider(FabricPackOutput output) {
         super(output);
     }
 

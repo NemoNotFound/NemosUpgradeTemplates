@@ -1,7 +1,7 @@
 package com.nemonotfound.nemos.upgrade.templates.datagen;
 
 import com.nemonotfound.nemos.upgrade.templates.world.item.UpgradeTemplateItems;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -18,11 +18,9 @@ import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.minecraft.data.recipes.SmithingTransformRecipeBuilder.smithing;
-
 public class UpgradeTemplateRecipeProvider extends FabricRecipeProvider {
 
-    public UpgradeTemplateRecipeProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+    public UpgradeTemplateRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 

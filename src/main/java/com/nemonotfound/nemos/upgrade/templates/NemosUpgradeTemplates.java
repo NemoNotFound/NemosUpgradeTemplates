@@ -15,7 +15,7 @@ public class NemosUpgradeTemplates implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("So.. you think your worth it to use Nemo's Upgrade Templates? You fool!");
+		LOGGER.info("So.. you think you're worth it to use Nemo's Upgrade Templates? You fool!");
 
 		UpgradeTemplateItems.init();
 		UpgradeTemplatesCreativeModeTabs.init();

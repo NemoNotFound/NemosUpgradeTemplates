@@ -1,11 +1,13 @@
 package com.nemonotfound.nemos.upgrade.templates.world.item;
 
 import com.nemonotfound.nemos.upgrade.templates.helper.SmithingTemplateItemHelper;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 
 import java.util.function.Function;
@@ -44,6 +46,15 @@ public class UpgradeTemplateItems {
     private static Item registerItem(String path, Function<Item.Properties, Item> function, Item.Properties properties) {
         var resourceKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, path));
 
-        return Items.registerItem(resourceKey, function, properties);
+        return registerItem(resourceKey, function, properties);
+    }
+
+    private static Item registerItem(final ResourceKey<Item> key, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
+        Item item = itemFactory.apply(properties.setId(key));
+        if (item instanceof BlockItem blockItem) {
+            blockItem.registerBlocks(Item.BY_BLOCK, item);
+        }
+
+        return Registry.register(BuiltInRegistries.ITEM, key, item);
     }
 }
