@@ -1,4 +1,4 @@
-# Changelog v1.0
+# Changelog v1.0.1
 
 ## Additions
 - Added upgrade templates and recipes for tools, weapons, and armor
