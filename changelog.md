@@ -1,7 +1,4 @@
-# Changelog v1.1
+# Changelog v1.2
 
 ## Additions
-- Added upgrade templates to the weaponsmith_gift and toolsmith_gift loot tables
-
-## Changes
-- Slightly increased chances to find the upgrade templates
+- Added built-in resourcepack to update the looks of the Netherite Template
