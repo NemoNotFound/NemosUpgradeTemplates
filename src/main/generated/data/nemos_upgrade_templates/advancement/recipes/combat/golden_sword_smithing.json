@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_upgrade_templates:golden_sword_smithing"
+        "recipes": "nemos_upgrade_templates:golden_sword_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nemos_upgrade_templates:copper_upgrade_smithing_template"
+        "recipes": "nemos_upgrade_templates:copper_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

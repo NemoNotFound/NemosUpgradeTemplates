@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": "minecraft:cobblestone",
     "C": "nemos_upgrade_templates:copper_upgrade_smithing_template"

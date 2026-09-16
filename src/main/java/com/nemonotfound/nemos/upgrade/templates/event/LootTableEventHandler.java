@@ -6,7 +6,7 @@ import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.EmptyLootItem;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 import static net.minecraft.world.level.storage.loot.BuiltInLootTables.TOOLSMITH_GIFT;
 import static net.minecraft.world.level.storage.loot.BuiltInLootTables.WEAPONSMITH_GIFT;
@@ -15,7 +15,7 @@ public class LootTableEventHandler {
 
     public static void handleLootTableEvent() {
         LootTableEvents.MODIFY.register(
-                (resourceKey, builder, lootTableSource, provider) -> {
+                (resourceKey, builder, _, _) -> {
                     if (
                             resourceKey == BuiltInLootTables.ABANDONED_MINESHAFT ||
                                     resourceKey == BuiltInLootTables.SHIPWRECK_TREASURE ||
@@ -92,7 +92,7 @@ public class LootTableEventHandler {
         var emptyItemWeight = fullWeight - copperWeight - ironWeight;
 
         return LootPool.lootPool()
-                .setRolls(ConstantValue.exactly(1.0F))
+                .setRolls(ContextIntProviders.exactly(1))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.COPPER_UPGRADE_SMITHING_TEMPLATE).setWeight(copperWeight))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.IRON_UPGRADE_SMITHING_TEMPLATE).setWeight(ironWeight))
                 .add(EmptyLootItem.emptyItem().setWeight(emptyItemWeight))
@@ -104,7 +104,7 @@ public class LootTableEventHandler {
         var emptyItemWeight = fullWeight - goldWeight - diamondWeight;
 
         return LootPool.lootPool()
-                .setRolls(ConstantValue.exactly(1.0F))
+                .setRolls(ContextIntProviders.exactly(1))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.GOLD_UPGRADE_SMITHING_TEMPLATE).setWeight(goldWeight))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.DIAMOND_UPGRADE_SMITHING_TEMPLATE).setWeight(diamondWeight))
                 .add(EmptyLootItem.emptyItem().setWeight(emptyItemWeight))
@@ -116,7 +116,7 @@ public class LootTableEventHandler {
         var emptyItemWeight = fullWeight - copperWeight - ironWeight - goldWeight - diamondWeight;
 
         return LootPool.lootPool()
-                .setRolls(ConstantValue.exactly(1.0F))
+                .setRolls(ContextIntProviders.exactly(1))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.COPPER_UPGRADE_SMITHING_TEMPLATE).setWeight(copperWeight))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.IRON_UPGRADE_SMITHING_TEMPLATE).setWeight(ironWeight))
                 .add(LootItem.lootTableItem(UpgradeTemplateItems.GOLD_UPGRADE_SMITHING_TEMPLATE).setWeight(goldWeight))

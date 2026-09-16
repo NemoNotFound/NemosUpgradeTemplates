@@ -3,15 +3,17 @@ package com.nemonotfound.nemos.upgrade.templates.datagen;
 import com.nemonotfound.nemos.upgrade.templates.world.item.UpgradeTemplateItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SmithingTransformRecipeBuilder;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.NotNull;
 import org.jspecify.annotations.NonNull;
@@ -25,8 +27,12 @@ public class UpgradeTemplateRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected @NotNull RecipeProvider createRecipeProvider(HolderLookup.@NonNull Provider provider, @NonNull RecipeOutput recipeOutput) {
-        return new RecipeProvider(provider, recipeOutput) {
+    protected @NotNull RecipeProvider createRecipeProvider(
+            HolderLookup.@NonNull Provider provider,
+            @NonNull BootstrapContext<Recipe<?>> recipeOutput,
+            @NonNull BootstrapContext<Advancement> advancementOutput
+    ) {
+        return new RecipeProvider(recipeOutput, advancementOutput) {
 
             @Override
             public void buildRecipes() {

@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": "minecraft:gold_ingot",
     "C": "nemos_upgrade_templates:diamond_upgrade_smithing_template"
